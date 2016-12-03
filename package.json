@@ -1,0 +1,56 @@
+{
+  "name": "eslint-failing-rules",
+  "version": "1.0.0",
+  "description": "Gets failing ESLint rules",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard",
+    "unit": "ava ${CI:+--verbose}",
+    "coverage": "nyc npm run unit",
+    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "test": "npm run lint && npm run coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mightyiam/eslint-failing-rules.git"
+  },
+  "keywords": [
+    "eslint",
+    "failing",
+    "rules"
+  ],
+  "author": "Shahar Or <mightyiampresence@gmail.com> (mightyiam)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mightyiam/eslint-failing-rules/issues"
+  },
+  "homepage": "https://github.com/mightyiam/eslint-failing-rules#readme",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "codecov": "^1.0.1",
+    "eslint": "^3.11.1",
+    "mock-require": "^2.0.0",
+    "nyc": "^10.0.0",
+    "simple-spy": "github:mightyiam/simple-spy#constructor",
+    "standard": "^8.6.0"
+  },
+  "standard": {
+    "ignore": [
+      "test/_fixture.js"
+    ]
+  },
+  "nyc": {
+    "lines": 100,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "include": [
+      "lib/**/*.js"
+    ],
+    "exclude": [
+      "lib/**/*.test.js"
+    ],
+    "all": true,
+    "check-coverage": true
+  }
+}

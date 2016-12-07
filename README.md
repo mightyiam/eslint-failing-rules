@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/mightyiam/eslint-failing-rules.svg?branch=master)](https://travis-ci.org/mightyiam/eslint-failing-rules) [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![Build Status](https://travis-ci.org/mightyiam/eslint-failing-rules.svg?branch=master)](https://travis-ci.org/mightyiam/eslint-failing-rules) [![codecov](https://codecov.io/gh/mightyiam/eslint-failing-rules/branch/master/graph/badge.svg)](https://codecov.io/gh/mightyiam/eslint-failing-rules)
+[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 # eslint-failing-rules
 

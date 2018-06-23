@@ -28,7 +28,7 @@
   "devDependencies": {
     "ava": "^0.25.0",
     "codecov": "^3.0.0",
-    "eslint": "^4.1.0",
+    "eslint": "^5.0.0",
     "mock-require": "^3.0.1",
     "nyc": "^11.0.1",
     "simple-spy": "^2.2.1",
